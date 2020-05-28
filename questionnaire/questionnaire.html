@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI课设-questionnaire</title>
+    <link rel="stylesheet" type="text/css" href="../common/reset.css">
+    <link rel="stylesheet" type="text/css" href="../common/common.css">
+    <link rel="stylesheet" type="text/css" href="questionnaire.css">
+</head>
+<body>
+<!--anchor link 注意：点击触发anchor会让url后缀加上：#topAnchor-->
+<a id="topAnchor"></a>
+
+<!--10. 导航栏-->
+<div class="header">
+    <div class="header-wrap">
+        <div class="header-left">导航栏</div>
+        <nav class="header-right">
+            <a class="header-nav-item" href="../index/index.html">首页</a>
+            <a class="header-nav-item" href="../register/register.html">注册</a>
+            <a class="header-nav-item" href="./questionnaire.html">问卷</a>
+        </nav>
+    </div>
+</div>
+
+<!--header的position设置为fixed后，下方元素的相对位置会变化。使用一个header-placeholder防止下方元素的相对位置变化-->
+<div class="header-placeholder"></div>
+
+<!--5. 锚点链接-返回顶部。注意：点击触发anchor会让url后缀加上：#topAnchor-->
+<a href="#topAnchor">
+    <div class="anchor-to-top">
+        <div class="anchor-to-top-content">↑</div>
+    </div>
+</a>
+
+<!--main-->
+
+<div class="questionnaire-area">
+    <div class="questionnaire-area-content">
+        <div class="questionnaire-title">模拟问卷</div>
+        <form class="questionnaire-form" action="./form-submit.html" method="POST">
+            <div class="questionnaire-form-item">
+                性别：
+                <label>
+                    <input type="radio" name="sex" value="male">男
+                </label>
+                <label>
+                    <input type="radio" name="sex" value="female">女
+                </label>
+            </div>
+            <div class="questionnaire-form-item">
+                爱好：
+                <label>
+                    <input type="checkbox" name="hobby" value="swim">游泳
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="basketball">篮球
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="run">跑步
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="ropeSkipping">跳绳
+                </label>
+            </div>
+            <div class="questionnaire-form-item">
+                年级：
+                <select name="grade">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                </select>
+            </div>
+            <div class="questionnaire-form-item questionnaire-multiple-select-area">
+                <div>空闲时间(可滑动多选)：</div>
+                <select name="grade" multiple size="3">
+                    <option value="monday">周一</option>
+                    <option value="tuesday">周二</option>
+                    <option value="wednesday">周三</option>
+                    <option value="thursday">周四</option>
+                    <option value="friday">周五</option>
+                    <option value="saturday">周六</option>
+                    <option value="sunday">周日</option>
+                </select>
+            </div>
+            <div>
+                <div>多选下拉列表多选方法：</div>
+                <ul>
+                    <li>windows：按住 Ctrl 按钮来选择多个选项</li>
+                    <li>MacOS：按住 command 按钮来选择多个选项</li>
+                </ul>
+            </div>
+            <div class="register-button-container">
+                <div class="register-button-area">
+                    <input type="submit" value="提交">
+                    <button type="reset">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="questionnaire.js"></script>
+</body>
+</html>

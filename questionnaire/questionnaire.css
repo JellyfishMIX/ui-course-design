@@ -2,9 +2,9 @@ body {
     background-color: #e9e9e9;
 }
 
-/*register-area*/
+/*questionnaire-area*/
 
-.register {
+.questionnaire-area {
     position: absolute;
     width: 500px;
     height: 500px;
@@ -15,30 +15,41 @@ body {
     border-radius: 18px;
 }
 
-.register-content {
+.questionnaire-area-content {
     text-align: center;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    width: 260px;
 }
 
-.register-title {
+.questionnaire-title {
     margin: 10px 0;
     font-size: 24px;
 }
 
-.register-button-area {
+.questionnaire-form {
+    text-align: left;
+}
+
+.questionnaire-form-item {
+    margin: 5px 0;
+}
+
+.questionnaire-multiple-select-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.register-button-container {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.questionnaire-button-area {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-content: center;
-    margin: 10px 0;
-}
-
-.register-form-input-item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 250px;
 }

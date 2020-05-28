@@ -95,3 +95,9 @@ td {
 .video-area-video {
     width: 500px;
 }
+
+/*14. questionnaire-area*/
+
+.questionnaire-area {
+    background-color: beige;
+}

@@ -18,12 +18,15 @@
         <nav class="header-right">
             <a class="header-nav-item" href="index.html">首页</a>
             <a class="header-nav-item" href="../register/register.html">注册</a>
+            <a class="header-nav-item" href="../questionnaire/questionnaire.html">问卷</a>
         </nav>
     </div>
 </div>
 
 <!--header的position设置为fixed后，下方元素的相对位置会变化。使用一个header-placeholder防止下方元素的相对位置变化-->
 <div class="header-placeholder"></div>
+
+<!--main-->
 
 <!--1. 文本的内容-->
 <div class="text-area area">
@@ -103,9 +106,13 @@
     <div class="area-content">
         <div class="title">4. 超链接</div>
         <div>
-            <div class="sub-title"><a href="#" onclick="window.open('https://blog.csdn.net/weixin_43735348')">(1) 外部网页链接，弹出一个新窗口</a></div>
-            <div class="sub-title"><a href="#" onclick="window.open('../register/register.html')">(2) 本网站内部页面链接（注册页面）</a> </div>
-            <a href="./resources/zip-package.zip"><div class="sub-title">(3) 点击下载压缩包</div></a>
+            <div class="sub-title">
+                <a href="#" onclick="window.open('https://blog.csdn.net/weixin_43735348')">(1) 外部网页链接，弹出一个新窗口</a>
+            </div>
+            <div class="sub-title">
+                <a href="#" onclick="window.open('../register/register.html')">(2) 本网站内部页面链接（注册页面）</a>
+            </div>
+            <div class="sub-title"><a href="./resources/zip-package.zip">(3) 点击下载压缩包</a></div>
         </div>
     </div>
 </div>
@@ -156,7 +163,9 @@
 <div class="register-area area">
     <div class="area-content">
         <div class="title">7. 带校验功能的注册页面</div>
-        <a href="#" onclick="window.open('../register/register.html')"><div class="sub-title">点击进入注册页面</div></a>
+        <div class="sub-title">
+            <a href="#" onclick="window.open('../register/register.html')">点击进入注册页面</a>
+        </div>
     </div>
 </div>
 
@@ -183,6 +192,16 @@
             <video class="video-area-video" src="./resources/apple-promo.mp4" controls>
                 your browser does not support the <code>video</code> tag.
             </video>
+        </div>
+    </div>
+</div>
+
+<!--14. 带校验功能的调查问卷-->
+<div class="questionnaire-area area">
+    <div class="area-content">
+        <div class="title">14. 带校验功能的调查问卷</div>
+        <div class="sub-title">
+            <a href="#" onclick="window.open('../questionnaire/questionnaire.html')">点击进入调查问卷页面</a>
         </div>
     </div>
 </div>
