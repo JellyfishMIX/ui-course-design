@@ -1,21 +1,76 @@
-.navigator {
-    width: 100%;
-    height: 100px;
+/*common*/
+
+.title {
+    margin: 15px 0;
+    font-size: 28px;
+}
+
+.sub-title {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.area {
+    padding: 20px;
+    text-align: center;
+}
+
+.area-content {
+    margin: 0 40%;
+    width: 600px;
+    text-align: left;
+}
+
+/*1. text-area*/
+
+.text-area {
+    background-color: #e6e6e6;
+}
+.text-area-bolder {
+    font-weight: bold;
+}
+
+.text-area-italic {
+    font-style: italic;
+}
+
+.text-area-span {
+    color: red;
+    font-size: 20px;
+    font-family: STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑";
+}
+
+/*2. list-area*/
+
+.list-area {
+    background-color: beige;
+}
+
+/*3. image-area*/
+
+.image-area {
+    background: image('./images/html-img.jpg') no-repeat;
+}
+
+.image-area-img {
+    width: 300px;
+}
+
+/*4. hyperlink-area*/
+.hyperlink-area {
     background-color: #e6e6e6;
 }
 
-.navigator-wrap {
-    margin: 0 auto;
-    width: 80%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+/*6. table-area*/
+.table-area {
+    background-color: beige;
 }
 
-.navigator-right {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 200px;
+/*id选择器，这里只做样例，并不推荐使用*/
+#tableAreaAddRowButton {
+    margin-top: 10px ;
+}
+
+td {
+    text-align: center;
 }

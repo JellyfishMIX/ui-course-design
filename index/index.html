@@ -4,18 +4,158 @@
     <meta charset="UTF-8">
     <title>UI课设-index</title>
     <link rel="stylesheet" type="text/css" href="../common/reset.css">
+    <link rel="stylesheet" type="text/css" href="../common/common.css">
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-<!--10.导航栏-->
-<div class="navigator">
-    <div class="navigator-wrap">
-        <div class="navigator-left">导航栏</div>
-        <div class="navigator-right">
+<!--anchor link, 注意：点击触发anchor会让url后缀加上：#topAnchor-->
+<a id="topAnchor"></a>
+
+<!--10. 导航栏-->
+<div class="header">
+    <div class="header-wrap">
+        <div class="header-left">导航栏</div>
+        <div class="header-right">
             <div>link-1</div>
             <div>link-2</div>
         </div>
     </div>
 </div>
+
+<!--1. 文本的内容-->
+<div class="text-area area">
+    <div class="area-content">
+        <div class="title">1. 文本的内容</div>
+        <div>
+            <div>
+                <div class="sub-title">(1) 段落</div>
+                <p>
+                    床前明月光，<br>
+                    疑是地上霜。<br>
+                    举头望明月，<br>
+                    低头思故乡。<br>
+                </p>
+            </div>
+
+            <div>
+                <div class="sub-title">(2) 加粗，倾斜</div>
+                <div class="text-area-bolder">加粗</div>
+                <div class="text-area-italic">倾斜</div>
+            </div>
+
+            <div>
+                <div class="sub-title">(3) span标签设置文本颜色、字体、字号</div>
+                <span class="text-area-span">我是span标签</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--2. 列表的内容-->
+<div class="list-area area">
+    <div class="area-content">
+        <div class="title">2. 列表的内容</div>
+        <div>
+            <div>
+                <div class="sub-title">(1) 有序列表</div>
+                <ol>
+                    <li>aaa</li>
+                    <li>bbb</li>
+                    <li>ccc</li>
+                </ol>
+            </div>
+            <div>
+                <div class="sub-title">(2) 无序列表</div>
+                <ul>
+                    <li>aaa</li>
+                    <li>bbb</li>
+                    <li>ccc</li>
+                </ul>
+            </div>
+            <div>
+                <div class="sub-title">(3) 标题标签的应用</div>
+                <div>已经使用title标签，名称为"UI课设-index"</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--3. 图片的应用-->
+<div class="image-area area">
+    <div class="area-content">
+        <div class="title">3. 图片的应用</div>
+        <div>
+            <div class="sub-title">(1) 显示图片及设置大小</div>
+            <div class="sub-title">(2) 图片作为页面背景</div>
+            <div>
+                <div class="sub-title">(3) 图片超链接</div>
+                <a href="https://blog.csdn.net/weixin_43735348"><img class="image-area-img" src="./images/css-img.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--4. 超链接-->
+<div class="hyperlink-area area">
+    <div class="area-content">
+        <div class="title">4. 超链接</div>
+        <div>
+            <div class="sub-title"><a href="#" onclick="window.open('https://blog.csdn.net/weixin_43735348')">(1) 外部网页链接，弹出一个新窗口</a></div>
+            <div class="sub-title"><a href="#" onclick="window.open('../register/register.html')">(2) 本网站内部页面链接（注册页面）</a> </div>
+            <a href="./resources/zip-package.zip"><div class="sub-title">(3) 点击下载压缩包</div></a>
+        </div>
+    </div>
+</div>
+
+<!--5. 锚点链接-返回顶部。注意：点击触发anchor会让url后缀加上：#topAnchor-->
+<a href="#topAnchor">
+    <div class="anchor-to-top">
+        <div class="anchor-to-top-content">↑</div>
+    </div>
+</a>
+
+<!--6. 表格的应用-->
+<div class="table-area area">
+    <div class="area-content">
+        <div class="title">6. 表格的应用</div>
+        <table id="tableAreaTable" border="1">
+            <caption>考场信息表(单元格内容居中)</caption>
+            <tr>
+                <th rowspan="4" id="tableArea1801Class">1801班</th>
+                <th colspan="2">考场-座位号</th>
+                <th>姓名</th>
+                <th>试卷类别</th>
+            </tr>
+            <tr>
+                <td>23101</td>
+                <td>03</td>
+                <td>小明</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>23102</td>
+                <td>12</td>
+                <td>小红</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>12301</td>
+                <td>26</td>
+                <td>老李</td>
+                <td>B</td>
+            </tr>
+        </table>
+        <button id="tableAreaAddRowButton" onclick="tableAreaAddRow(document.getElementById('tableAreaTable'))">添加两行</button>
+    </div>
+</div>
+
+<!--7. 带校验功能的注册页面-->
+<div class="register-area area">
+    <div class="area-content">
+        <div class="title">7. 带校验功能的注册页面</div>
+        <a href="#" onclick="window.open('../register/register.html')"><div class="sub-title">点击进入注册页面</div></a>
+    </div>
+</div>
+<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
