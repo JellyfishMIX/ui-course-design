@@ -12,7 +12,6 @@
 
 .area {
     padding: 20px;
-    text-align: center;
 }
 
 .area-content {
@@ -73,4 +72,8 @@
 
 td {
     text-align: center;
+}
+
+.register-area {
+    background-color: #e6e6e6;
 }

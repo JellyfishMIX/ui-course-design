@@ -9,8 +9,8 @@ const tableArea1801Class = document.getElementById('tableArea1801Class');
 function tableAreaAddRow(baseTable) {
     const iLen = tableArray.length;
     for (let i = 0; i < iLen; i++) {
-        let row = baseTable.insertRow();
-        let jArray = tableArray[i];
+        const row = baseTable.insertRow();
+        const jArray = tableArray[i];
         const jLen = jArray.length;
         for (let j = 0; j < jLen; j++) {
             let cell = row.insertCell();

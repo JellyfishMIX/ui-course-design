@@ -29,5 +29,34 @@
     </div>
 </a>
 
+<div class="register">
+    <div class="register-content">
+        <div class="register-title">模拟注册</div>
+        <form action="form-submit.html" class="register-form" method="POST">
+            <div class="register-form-input-item">
+                <label for="usernameInput">用户名</label>
+                <input id="usernameInput" placeholder="请输入用户名" name="username" type="text">
+            </div>
+            <div class="register-form-input-item">
+                <label for="passwordInput">密码</label>
+                <input id="passwordInput" placeholder="请输入密码" name="password" type="password">
+            </div>
+            <div class="register-form-input-item">
+                <label for="confirmPasswordInput">密码确认</label>
+                <input id="confirmPasswordInput" placeholder="请输入相同的密码" name="confirmPassword" type="password">
+            </div>
+            <div class="register-form-input-item">
+                <label for="emailInput">邮箱</label>
+                <input id="emailInput" placeholder="请输入邮箱" name="email" type="text">
+            </div>
+            <div class="register-button-area">
+                <input type="submit" value="注册">
+                <button type="reset">重置</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript" src="register.js"></script>
 </body>
 </html>
