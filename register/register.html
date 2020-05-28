@@ -15,12 +15,15 @@
 <div class="header">
     <div class="header-wrap">
         <div class="header-left">导航栏</div>
-        <div class="header-right">
-            <div>link-1</div>
-            <div>link-2</div>
-        </div>
+        <nav class="header-right">
+            <a class="header-nav-item" href="../index/index.html">首页</a>
+            <a class="header-nav-item" href="register.html">注册</a>
+        </nav>
     </div>
 </div>
+
+<!--header的position设置为fixed后，下方元素的相对位置会变化。使用一个header-placeholder防止下方元素的相对位置变化-->
+<div class="header-placeholder"></div>
 
 <!--5. 锚点链接-返回顶部。注意：点击触发anchor会让url后缀加上：#topAnchor-->
 <a href="#topAnchor">

@@ -91,3 +91,7 @@ td {
 .video-area {
     background-color: #e6e6e6;
 }
+
+.video-area-video {
+    width: 500px;
+}

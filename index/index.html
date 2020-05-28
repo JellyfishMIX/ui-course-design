@@ -15,12 +15,15 @@
 <div class="header">
     <div class="header-wrap">
         <div class="header-left">导航栏</div>
-        <div class="header-right">
-            <div>link-1</div>
-            <div>link-2</div>
-        </div>
+        <nav class="header-right">
+            <a class="header-nav-item" href="index.html">首页</a>
+            <a class="header-nav-item" href="../register/register.html">注册</a>
+        </nav>
     </div>
 </div>
+
+<!--header的position设置为fixed后，下方元素的相对位置会变化。使用一个header-placeholder防止下方元素的相对位置变化-->
+<div class="header-placeholder"></div>
 
 <!--1. 文本的内容-->
 <div class="text-area area">
@@ -163,7 +166,7 @@
         <div class="title">8. 背景音乐</div>
         <div>
             <audio controls>
-                Your browser does not support the <code>audio</code> element.
+                Your browser does not support the <code>audio</code> tag.
                 <source src="./resources/陈亮-宋依凡-鲸歌.mp3" type="audio/mpeg">
                 <source src="./resources/灰澈-星茶会.mp3" type="audio/mpeg">
                 <source src="./resources/Ken-Arai-NEXT-TO-YOU.mp3.mp3" type="audio/mpeg">
@@ -176,6 +179,11 @@
 <div class="video-area area">
     <div class="area-content">
         <div class="title">9. 页面小视频的播放</div>
+        <div>
+            <video class="video-area-video" src="./resources/apple-promo.mp4" controls>
+                your browser does not support the <code>video</code> tag.
+            </video>
+        </div>
     </div>
 </div>
 
