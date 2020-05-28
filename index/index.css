@@ -74,6 +74,20 @@ td {
     text-align: center;
 }
 
+/*7. register-area*/
+
 .register-area {
+    background-color: #e6e6e6;
+}
+
+/*8. audio-area*/
+
+.audio-area {
+    background-color: beige;
+}
+
+/*9. video-area*/
+
+.video-area {
     background-color: #e6e6e6;
 }
