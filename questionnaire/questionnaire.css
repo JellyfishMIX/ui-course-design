@@ -42,6 +42,17 @@ body {
     flex-direction: row;
 }
 
+.questionnaire-form-remark {
+    padding: 8px 3px 0 10px;
+    border: 2px dashed #e6e6e6;
+    border-radius: 10px;
+}
+
+.questionnaire-form-ul {
+    margin: 7px 0;
+    padding-left: 20px;
+}
+
 .register-button-container {
     text-align: center;
     margin: 10px 0;

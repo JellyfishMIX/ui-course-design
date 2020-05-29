@@ -14,11 +14,15 @@
 <!--10. 导航栏-->
 <div class="header">
     <div class="header-wrap">
-        <div class="header-left">导航栏</div>
+        <div class="header-left">
+            <div>导航栏</div>
+            <div id="headerDate"></div>
+        </div>
         <nav class="header-right">
             <a class="header-nav-item" href="../index/index.html">首页</a>
             <a class="header-nav-item" href="../register/register.html">注册</a>
             <a class="header-nav-item" href="./questionnaire.html">问卷</a>
+            <a class="header-nav-item" href="../puzzle/puzzle.html">拼图</a>
         </nav>
     </div>
 </div>
@@ -84,23 +88,24 @@
                     <option value="sunday">周日</option>
                 </select>
             </div>
-            <div>
+            <div class="questionnaire-form-remark">
                 <div>多选下拉列表多选方法：</div>
-                <ul>
+                <ul class="questionnaire-form-ul">
                     <li>windows：按住 Ctrl 按钮来选择多个选项</li>
                     <li>MacOS：按住 command 按钮来选择多个选项</li>
                 </ul>
             </div>
             <div class="register-button-container">
                 <div class="register-button-area">
-                    <input type="submit" value="提交">
                     <button type="reset">重置</button>
+                    <input type="submit" value="提交">
                 </div>
             </div>
         </form>
     </div>
 </div>
 
+<script type="text/javascript" src="../common/common.js"></script>
 <script type="text/javascript" src="questionnaire.js"></script>
 </body>
 </html>

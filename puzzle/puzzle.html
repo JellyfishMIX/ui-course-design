@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI课设-puzzle</title>
+    <link rel="stylesheet" type="text/css" href="../common/reset.css">
+    <link rel="stylesheet" type="text/css" href="../common/common.css">
+    <link rel="stylesheet" type="text/css" href="puzzle.css">
+</head>
+<body>
+<!--anchor link 注意：点击触发anchor会让url后缀加上：#topAnchor-->
+<a id="topAnchor"></a>
+
+<!--10. 导航栏-->
+<div class="header">
+    <div class="header-wrap">
+        <div class="header-left">
+            <div>导航栏</div>
+            <div id="headerDate"></div>
+        </div>
+        <nav class="header-right">
+            <a class="header-nav-item" href="../index/index.html">首页</a>
+            <a class="header-nav-item" href="../register/register.html">注册</a>
+            <a class="header-nav-item" href="../questionnaire/questionnaire.html">问卷</a>
+            <a class="header-nav-item" href="./puzzle.html">拼图</a>
+        </nav>
+    </div>
+</div>
+
+<!--main-->
+
+<div class="puzzle-area">
+    <div class="puzzle-area-content">
+        <div class="puzzle-title">拼图游戏</div>
+        <div class="puzzle-entity-container">
+            <canvas id="puzzleEntity" width="400px" height="400px"></canvas>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../common/common.js"></script>
+<script type="text/javascript" src="puzzle.js"></script>
+</body>
+</html>

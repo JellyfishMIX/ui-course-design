@@ -1,3 +1,29 @@
+// 可能出现一个页面多个document.body.onload的情况，因此将document.body.onload封装，集中调用
+document.body.onload = () => {
+    commonBodyOnload();
+    setUlRemoveLiMethod();
+};
+
+// list-area
+const ul = document.getElementById('listAreaUl');
+
+const ulAddLi = () => {
+    let newLi = document.createElement('li');
+    newLi.innerText = '新增无序节点' + new Date();
+    ul.appendChild(newLi);
+    setUlRemoveLiMethod();
+};
+
+const setUlRemoveLiMethod = () => {
+    let lis = ul.getElementsByTagName('li');
+    let lisLen = lis.length;
+    for (let i = 0; i < lisLen; i++) {
+        lis[i].onclick = () => {
+            ul.removeChild(lis[i]);
+        };
+    }
+};
+
 // table-area
 let tableArray = [
     ['23101', '12', '喜羊羊', 'A'],

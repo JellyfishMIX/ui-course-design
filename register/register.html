@@ -14,11 +14,15 @@
 <!--10. 导航栏-->
 <div class="header">
     <div class="header-wrap">
-        <div class="header-left">导航栏</div>
+        <div class="header-left">
+            <div>导航栏</div>
+            <div id="headerDate"></div>
+        </div>
         <nav class="header-right">
             <a class="header-nav-item" href="../index/index.html">首页</a>
             <a class="header-nav-item" href="register.html">注册</a>
             <a class="header-nav-item" href="../questionnaire/questionnaire.html">问卷</a>
+            <a class="header-nav-item" href="../puzzle/puzzle.html">拼图</a>
         </nav>
     </div>
 </div>
@@ -56,13 +60,14 @@
                 <input id="emailInput" placeholder="请输入邮箱" name="email" type="text">
             </div>
             <div class="register-button-area">
-                <input type="submit" value="注册">
                 <button type="reset">重置</button>
+                <input type="submit" value="注册">
             </div>
         </form>
     </div>
 </div>
 
+<script type="text/javascript" src="../common/common.js"></script>
 <script type="text/javascript" src="register.js"></script>
 </body>
 </html>

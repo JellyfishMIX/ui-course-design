@@ -14,11 +14,15 @@
 <!--10. 导航栏-->
 <div class="header">
     <div class="header-wrap">
-        <div class="header-left">导航栏</div>
+        <div class="header-left">
+            <div>导航栏</div>
+            <div id="headerDate"></div>
+        </div>
         <nav class="header-right">
             <a class="header-nav-item" href="index.html">首页</a>
             <a class="header-nav-item" href="../register/register.html">注册</a>
             <a class="header-nav-item" href="../questionnaire/questionnaire.html">问卷</a>
+            <a class="header-nav-item" href="../puzzle/puzzle.html">拼图</a>
         </nav>
     </div>
 </div>
@@ -72,11 +76,13 @@
             </div>
             <div>
                 <div class="sub-title">(2) 无序列表</div>
-                <ul>
+                <ul id="listAreaUl">
                     <li>aaa</li>
                     <li>bbb</li>
                     <li>ccc</li>
                 </ul>
+                <button onclick="ulAddLi()">追加节点</button>
+                <div class="list-area-ul-remark">鼠标双击无序列表某一节点，可以删除该节点</div>
             </div>
             <div>
                 <div class="sub-title">(3) 标题标签的应用</div>
@@ -94,7 +100,7 @@
             <div class="sub-title">(1) 显示图片及设置大小</div>
             <div class="sub-title">(2) 图片作为页面背景</div>
             <div>
-                <div class="sub-title">(3) 图片超链接</div>
+                <div class="sub-title">(3) 图片超链接（链接至作者的博客）</div>
                 <a href="https://blog.csdn.net/weixin_43735348"><img class="image-area-img" src="./images/css-img.png"></a>
             </div>
         </div>
@@ -107,7 +113,7 @@
         <div class="title">4. 超链接</div>
         <div>
             <div class="sub-title">
-                <a href="#" onclick="window.open('https://blog.csdn.net/weixin_43735348')">(1) 外部网页链接，弹出一个新窗口</a>
+                <a href="#" onclick="window.open('https://blog.csdn.net/weixin_43735348')">(1) 外部网页链接，弹出一个新窗口（链接至作者的博客）</a>
             </div>
             <div class="sub-title">
                 <a href="#" onclick="window.open('../register/register.html')">(2) 本网站内部页面链接（注册页面）</a>
@@ -206,6 +212,17 @@
     </div>
 </div>
 
+<!--15. 拼图小游戏-->
+<div class="puzzle-area area">
+    <div class="area-content">
+        <div class="title">15. 拼图小游戏</div>
+        <div class="sub-title">
+            <a href="#" onclick="window.open('../puzzle/puzzle.html')">点击前往拼图小游戏页面</a>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../common/common.js"></script>
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

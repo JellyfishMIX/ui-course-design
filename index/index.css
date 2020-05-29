@@ -45,6 +45,10 @@
     background-color: beige;
 }
 
+.list-area-ul-remark {
+    margin-top: 10px;
+}
+
 /*3. image-area*/
 
 .image-area {
@@ -100,4 +104,10 @@ td {
 
 .questionnaire-area {
     background-color: beige;
+}
+
+/*15. puzzle-area*/
+
+.puzzle-area {
+    background-color: #e6e6e6;
 }
