@@ -52,7 +52,17 @@
 /*3. image-area*/
 
 .image-area {
-    background: image('./images/html-img.jpg') no-repeat;
+    position: relative;
+    background: url('./images/little-stars.jpg') repeat;
+}
+
+.image-area-wrap {
+    position: relative;
+    left: -15px;
+    padding: 15px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: #e6e6e6;
 }
 
 .image-area-img {
@@ -61,12 +71,12 @@
 
 /*4. hyperlink-area*/
 .hyperlink-area {
-    background-color: #e6e6e6;
+    background-color: beige;
 }
 
 /*6. table-area*/
 .table-area {
-    background-color: beige;
+    background-color: #e6e6e6;
 }
 
 /*id选择器，这里只做样例，并不推荐使用*/
@@ -81,19 +91,19 @@ td {
 /*7. register-area*/
 
 .register-area {
-    background-color: #e6e6e6;
+    background-color: beige;
 }
 
 /*8. audio-area*/
 
 .audio-area {
-    background-color: beige;
+    background-color: #e6e6e6;
 }
 
 /*9. video-area*/
 
 .video-area {
-    background-color: #e6e6e6;
+    background-color: beige;
 }
 
 .video-area-video {
@@ -103,19 +113,19 @@ td {
 /*14. questionnaire-area*/
 
 .questionnaire-area {
-    background-color: beige;
+    background-color: #e6e6e6;
 }
 
 /*15. puzzle-area*/
 
 .puzzle-area {
-    background-color: #e6e6e6;
+    background-color: beige;
 }
 
 /*19. select-area */
 
 .select-area {
-    background-color: beige;
+    background-color: #e6e6e6;
 }
 
 .select-box {
