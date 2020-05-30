@@ -111,3 +111,18 @@ td {
 .puzzle-area {
     background-color: #e6e6e6;
 }
+
+/*19. select-area */
+
+.select-area {
+    background-color: beige;
+}
+
+.select-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.select-box-button-area {
+    margin-top: 10px;
+}

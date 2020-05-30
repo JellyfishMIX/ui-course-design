@@ -45,3 +45,28 @@ function tableAreaAddRow(baseTable) {
     }
     tableArea1801Class.setAttribute('rowspan', tableArea1801Class.getAttribute('rowspan') + 2);
 }
+
+// select-area
+
+const checkboxes = document.getElementsByName('selectAreaWeek');
+
+const selectAll = () => {
+    for (let i = 0; i < checkboxes.length; i++) {
+        console.log('test');
+        checkboxes[i].checked = true;
+    }
+};
+
+const unselectAll = () => {
+    for (let i = 0; i < checkboxes.length; i++) {
+        console.log('test');
+        checkboxes[i].checked = false;
+    }
+};
+
+const antiSelect = () => {
+    for (let i = 0; i < checkboxes.length; i++) {
+        console.log('test');
+        checkboxes[i].checked = !checkboxes[i].checked;
+    }
+};

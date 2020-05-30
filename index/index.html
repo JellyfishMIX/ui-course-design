@@ -222,6 +222,43 @@
     </div>
 </div>
 
+<!--19. 全选/全不选/反选-->
+<div class="select-area area">
+    <div class="area-content">
+        <div class="title">19. 全选/全不选/反选</div>
+        <div class="select-box">
+            <div>
+                <label>
+                    <input type="checkbox" name="selectAreaWeek" value="monday">周一
+                </label>
+                <label>
+                    <input type="checkbox" name="selectAreaWeek" value="tuesday">周二
+                </label>
+                <label>
+                    <input type="checkbox" name="selectAreaWeek" value="wednesday">周三
+                </label>
+                <label>
+                    <input type="checkbox" name="selectAreaWeek" value="thursday">周四
+                </label>
+                <label>
+                    <input type="checkbox" name="selectAreaWeek" value="friday">周五
+                </label>
+                <label>
+                    <input type="checkbox" name="selectAreaWeek" value="saturday">周六
+                </label>
+                <label>
+                    <input type="checkbox" name="selectAreaWeek" value="sunday">周日
+                </label>
+            </div>
+            <div class="select-box-button-area">
+                <button onclick="selectAll()">全选</button>
+                <button onclick="unselectAll()">全不选</button>
+                <button onclick="antiSelect()">反选</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript" src="../common/common.js"></script>
 <script type="text/javascript" src="index.js"></script>
 </body>
